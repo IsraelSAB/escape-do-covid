@@ -9,7 +9,7 @@ include 'functions.php';
 
 <div class="content">
 	<h2>Home</h2>
-	<p>Welcome to the home page teste!</p>
+	<p>Welcome to the home page Escape do Covid!</p>
 </div>
 
 <?=template_footer()?>
