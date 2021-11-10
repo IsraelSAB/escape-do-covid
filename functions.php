@@ -27,7 +27,7 @@ echo <<<EOT
     		<h1>ESCAPE DO COVID</h1>
             <a href="index.php"><i class="fas fa-home"></i>Home</a>
     		<a href="read.php"><i class="fas fa-address-book"></i>Contato</a>
-    	</div>
+		</div>
     </nav>
 EOT;
 }
