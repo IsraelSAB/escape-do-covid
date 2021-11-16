@@ -12,5 +12,7 @@ include 'functions.php';
 	<p>Bem vindo ao site Escape do Covid!</p>
 </div>
 
+
+
 <?=template_footer()?>
 
