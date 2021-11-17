@@ -27,7 +27,7 @@ if (!empty($_POST)) {
 	<h2>Create Contact</h2>
     <form action="create.php" method="post">
         <label for="id">ID</label>
-        <label for="name">Nomr</label>
+        <label for="name">Nome</label>
         <input type="text" name="id" placeholder="26" value="auto" id="id">
         <input type="text" name="name" placeholder="John Doe" id="name">
         <label for="email">Email</label>
