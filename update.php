@@ -15,21 +15,21 @@ if (isset($_GET['id'])) {
         // Update the record
         $stmt = $pdo->prepare('UPDATE contacts SET id = ?, name = ?, email = ?, phone = ?, title = ?, created = ? WHERE id = ?');
         $stmt->execute([$id, $name, $email, $phone, $title, $created, $_GET['id']]);
-        $msg = 'Updated Successfully!';
+        $msg = 'Atualizado com sucesso!';
     }
     // Get the contact from the contacts table
     $stmt = $pdo->prepare('SELECT * FROM contacts WHERE id = ?');
     $stmt->execute([$_GET['id']]);
     $contact = $stmt->fetch(PDO::FETCH_ASSOC);
     if (!$contact) {
-        exit('Contact doesn\'t exist with that ID!');
+        exit('Contato não existe');
     }
 } else {
-    exit('No ID specified!');
+    exit('Sem ID');
 }
 ?>
 
-<?=template_header('Read')?>
+<?=template_header('Atualizar')?>
 
 <div class="content update">
 	<h2>Update Contact #<?=$contact['id']?></h2>

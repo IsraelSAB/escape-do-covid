@@ -8,8 +8,8 @@ include 'functions.php';
 <?=template_header('Home')?>
 
 <div class="content">
-	<h2>Home</h2>
-	<p>Welcome to the home page!</p>
+	<h2>Escape Covid</h2>
+	<p>Bem vindo a página principal!</p>
 </div>
 
 <?=template_footer()?>
