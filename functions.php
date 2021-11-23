@@ -11,6 +11,39 @@ function pdo_connect_mysql() {
     	exit('Failed to connect to database!');
     }
 }
+
+function login ($email, $senha) {
+	$pdo = pdo_connect_mysql();
+	$query = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha'";
+	$result = mysqli_query($pdo, $query);
+	$row = mysqli_fetch_array($result);
+	if ($row) {
+		$_SESSION['email'] = $row['email'];
+		$_SESSION['id_usuario'] = $row['id_usuario'];
+		return true;
+	} else {
+		return false;
+	}
+}
+function is_logged_in() {
+	if (isset($_SESSION['usuario'])) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function cadastro ($nome, $email, $senha) {
+	$pdo = pdo_connect_mysql();
+	$query = "INSERT INTO usuario (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+	$result = mysqli_query($pdo, $query);
+	if ($result) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 function template_header($title) {
 echo <<<EOT
 <!DOCTYPE html>
