@@ -36,7 +36,7 @@ if (isset($_POST['funcao'])) {
 <head>
 	<title>Escape Covid</title>
 	<link rel="stylesheet" type="text/css" href="styleLogin.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="main">  	
