@@ -5,10 +5,10 @@ function pdo_connect_mysql() {
     $DATABASE_PASS = '';
     $DATABASE_NAME = 'escape';
     try {
-    	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
-    } catch (PDOException $exception) {
+    	return mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+    } catch (Exception $exception) {
     	// If there is an error with the connection, stop the script and display the error.
-    	exit('Failed to connect to database!');
+    	exit('Erro ao conectar ao banco de dados!');
     }
 }
 
