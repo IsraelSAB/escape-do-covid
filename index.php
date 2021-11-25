@@ -10,7 +10,7 @@ include 'functions.php';
 <div class="content">
 	<h2>Home</h2>
 	<h1>Bem vindo ao site Escape do Covid!</h1>
-	<h1>VACINA - Proteja-se do Covid-19!</h1>
+	<h1></h1>
 </div>
 
 

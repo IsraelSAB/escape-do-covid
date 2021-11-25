@@ -34,7 +34,7 @@ if (isset($_POST['funcao'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Escape Covid</title>
+	<title>Escape do Covid</title>
 	<link rel="stylesheet" type="text/css" href="styleLogin.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -47,6 +47,8 @@ if (isset($_POST['funcao'])) {
 					<label for="chk" aria-hidden="true">Criar Conta</label>
 					<input type="text" name="nome" placeholder="Nome" required="">
 					<input type="email" name="email" placeholder="Email" required="">
+					<input type="text" name="cpf" placeholder="CPF" required="">
+					<input type="date" name="datNasc" placeholder="Data Nascimento" required="">
 					<input type="password" name="senha" placeholder="Senha" required="">
 					<input type="hidden" name="funcao" value="cadastro">
 					<button>Criar</button>
