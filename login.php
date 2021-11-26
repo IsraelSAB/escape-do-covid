@@ -50,11 +50,12 @@ if (isset($_POST['funcao'])) {
 					<input type="text" name="cpf" placeholder="CPF" required="">
 					<input type="date" name="datNasc" placeholder="Data Nascimento" required="">
 					<input type="password" name="senha" placeholder="Senha" required="">
+
 					<input type="hidden" name="funcao" value="cadastro">
 					<button>Criar</button>
 				</form>
 			</div>
-
+			
 			<div class="login">
 				<form method="POST">
 					<label for="chk" aria-hidden="true">Login</label>
@@ -64,6 +65,14 @@ if (isset($_POST['funcao'])) {
 					<button>Entrar</button>
 				</form>
 			</div>
+	</div>
+
+	<div class="radioSel">
+		<p>Realiza práticas esportivas regularmente?</p>
+		<input type="radio" name="esporte" id="opt1" value="Sim">
+		<label for="opt1">Sim</label>
+		<input type="radio" name="esporte" id="opt2" value="Nao">
+		<label for="opt2">Não</label>
 	</div>
 </body>
 </html>
