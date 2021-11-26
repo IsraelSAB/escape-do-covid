@@ -67,12 +67,47 @@ if (isset($_POST['funcao'])) {
 			</div>
 	</div>
 
-	<div class="radioSel">
-		<p>Realiza práticas esportivas regularmente?</p>
-		<input type="radio" name="esporte" id="opt1" value="Sim">
-		<label for="opt1">Sim</label>
-		<input type="radio" name="esporte" id="opt2" value="Nao">
-		<label for="opt2">Não</label>
+	<div class="questionario">
+		<input type="checkbox" id="chkQuest" aria-hidden="true">
+
+		<div>
+			<p>Realiza práticas esportivas regularmente?</p>
+			<input type="radio" name="esporte" id="opt1" value="Sim">
+			<label for="opt1">Sim</label>
+			<input type="radio" name="esporte" id="opt2" value="Nao">
+			<label for="opt2">Não</label>
+
+			<p>Possui alguma comorbidade?</p>
+			<input type="radio" name="comorbidade" id="opt1" value="Sim">
+			<label for="opt1">Sim</label>
+			<input type="radio" name="comorbidade" id="opt2" value="Nao">
+			<label for="opt2">Não</label>
+
+			<p>É fumante?</p>
+			<input type="radio" name="fumante" id="opt1" value="Sim">
+			<label for="opt1">Sim</label>
+			<input type="radio" name="fumante" id="opt2" value="Nao">
+			<label for="opt2">Não</label>
+
+			<p>Esta acima do peso?</p>
+			<input type="radio" name="peso" id="opt1" value="Sim">
+			<label for="opt1">Sim</label>
+			<input type="radio" name="peso" id="opt2" value="Nao">
+			<label for="opt2">Não</label>
+		</div>
+
+		<div class = "vacina">
+			<br><label for="chkQuest" aria-hidden="true">Vacinação</label>
+
+			<br><br><label>Data da Primeira Dose:</label>
+			<input type="date" name="Dose1" required="">
+			<br><br><label>Data da Segunda Dose:</label>
+			<input type="date" name="dose2" required="">
+
+		</div>
+
+		
+
 	</div>
 </body>
 </html>
